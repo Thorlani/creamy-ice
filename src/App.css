@@ -1,0 +1,545 @@
+@media (min-width: 1441px) {
+  main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ebfe96;
+    overflow: clip;
+    color: #000;
+    scroll-behavior: smooth;
+  }
+
+  nav {
+    width: 100vw;
+    height: 10%;
+    padding: 1.5% 10%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+  }
+
+  nav div {
+    width: 50%;
+  }
+
+  h1::selection {
+    background-color: #000;
+    color: #ebfe96;
+  }
+
+  span {
+    padding: 10px 20px;
+    background-color: #000;
+    border-radius: 8px;
+    color: #ebfe96;
+  }
+
+  nav ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    list-style: none;
+  }
+
+  nav ul li {
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+  }
+
+  nav ul li:hover {
+    color: #ebfe96;
+  }
+
+  nav ul li:hover::before {
+    content: " ";
+    width: 80px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -10;
+    padding: 5px;
+    background-color: #000;
+    color: #ebfe96;
+    border-radius: 4px;
+  }
+
+  nav ul li:nth-child(1):hover::before {
+    left: -25px;
+    top: -5px;
+  }
+  nav ul li:nth-child(2):hover::before {
+    left: -30px;
+    top: -5px;
+  }
+  nav ul li:nth-child(3):hover::before {
+    left: -10px;
+    top: -5px;
+  }
+  nav ul li:nth-child(4):hover::before {
+    left: -25px;
+    top: -5px;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    height: 90%;
+    position: relative;
+  }
+
+  .iceCream {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    height: 800px;
+    width: 600px;
+    object-fit: contain;
+    animation: iceCream 1s 0.5s infinite linear alternate;
+  }
+
+  @keyframes iceCream {
+    from {
+      top: 0px;
+    }
+    to {
+      top: 30px;
+    }
+  }
+
+  .top_1 {
+    width: 100%;
+    height: 50%;
+    padding: 8% 10%;
+  }
+  .top_1 h1 {
+    max-width: 450px;
+    font-size: 64px;
+    font-weight: bold;
+  }
+  .bottom_1 {
+    width: 100%;
+    height: 50%;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .one {
+    background-image: url("./assets/3.jpg");
+  }
+  .two {
+    background-image: url("./assets/2.jpg");
+  }
+  .three {
+    background-image: url("./assets/1.jpg");
+  }
+  .bottom_1 button {
+    background-color: #000000dd;
+    border: none;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .bottom_1 button p {
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 24px;
+    animation: scale_up_down 1s infinite linear alternate;
+  }
+
+  @keyframes scale_up_down {
+    from {
+      transform: rotate(-5deg);
+    }
+    to {
+      transform: rotate(5deg);
+    }
+  }
+
+  .bottom_1 button p:hover {
+    text-decoration-line: overline;
+    text-decoration-color: #fff;
+    animation: none;
+  }
+
+  .btnContainer {
+    position: fixed;
+    z-index: 99;
+    bottom: 30px;
+    right: 30px;
+    width: 120px;
+    height: 40px;
+    background-color: #ebfe96;
+    border-radius: 4px;
+  }
+  .btnContainer button {
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  .btnContainer button img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ebfe96;
+    overflow: clip;
+    color: #000;
+  }
+
+  nav {
+    width: 100vw;
+    height: 10%;
+    padding: 1.5% 8%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+  }
+
+  nav div {
+    width: 50%;
+  }
+
+  h1::selection {
+    background-color: #000;
+    color: #ebfe96;
+  }
+
+  span {
+    padding: 5px 10px;
+    background-color: #000;
+    border-radius: 8px;
+    color: #ebfe96;
+  }
+
+  nav ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    list-style: none;
+  }
+
+  nav ul li {
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+  }
+
+  nav ul li:hover {
+    color: #ebfe96;
+  }
+
+  nav ul li:hover::before {
+    content: " ";
+    width: 80px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -10;
+    padding: 5px;
+    background-color: #000;
+    color: #ebfe96;
+    border-radius: 4px;
+  }
+
+  nav ul li:nth-child(1):hover::before {
+    left: -25px;
+    top: -5px;
+  }
+  nav ul li:nth-child(2):hover::before {
+    left: -30px;
+    top: -5px;
+  }
+  nav ul li:nth-child(3):hover::before {
+    left: -10px;
+    top: -5px;
+  }
+  nav ul li:nth-child(4):hover::before {
+    left: -25px;
+    top: -5px;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 40;
+  }
+
+  .iceCream {
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    height: 450px;
+    width: 400px;
+    object-fit: contain;
+    animation: iceCream 1s 0.5s infinite linear alternate;
+  }
+
+  @keyframes iceCream {
+    from {
+      top: 70px;
+    }
+    to {
+      top: 100px;
+    }
+  }
+
+  .top_1 {
+    width: 100%;
+    height: 50%;
+    padding: 8%;
+  }
+  .top_1 h1 {
+    max-width: 450px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .bottom_1 {
+    width: 100%;
+    height: 52%;
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .one {
+    background-image: url("./assets/3.jpg");
+  }
+  .two {
+    background-image: url("./assets/2.jpg");
+  }
+  .three {
+    background-image: url("./assets/1.jpg");
+  }
+  .bottom_1 button {
+    background-color: #000000dd;
+    border: none;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .bottom_1 button p {
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 24px;
+    animation: scale_up_down 1s infinite linear alternate;
+  }
+
+  @keyframes scale_up_down {
+    from {
+      transform: rotate(-5deg);
+    }
+    to {
+      transform: rotate(5deg);
+    }
+  }
+
+  .bottom_1 button p:hover {
+    text-decoration-line: overline;
+    text-decoration-color: #fff;
+    animation: none;
+  }
+
+  .muteBtn {
+    position: fixed;
+    z-index: 99;
+    top: 120px;
+    right: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  .btnContainer {
+    position: fixed;
+    z-index: 99;
+    bottom: 30px;
+    right: 30px;
+    width: 120px;
+    height: 40px;
+    background-color: #ebfe96;
+    border-radius: 4px;
+  }
+  .btnContainer button {
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  .btnContainer button img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 451px) {
+  main {
+    scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  .container {
+    scroll-snap-align: center;
+  }
+  nav {
+    padding: 6% 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav button {
+    display: block;
+    border: none;
+    background-color: transparent;
+  }
+  nav button img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+
+  .top_1 h1 {
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    top: 120px;
+  }
+  .iceCream {
+    height: 400px;
+    right: 0px;
+    animation: iceCream 1s 0.5s infinite linear alternate;
+  }
+
+  @keyframes iceCream {
+    from {
+      top: 260px;
+    }
+    to {
+      top: 280px;
+    }
+  }
+  .bottom_1 button {
+    padding: 10px;
+    position: relative;
+    top: 80px;
+  }
+  .bottom_1 button p {
+    font-size: 18px;
+  }
+  .muteBtn {
+    top: 318px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100dvh;
+    background-color: #ebfe96;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    padding: 4% 8% 20% 8%;
+  }
+  .menu .navbar {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu .navbar button {
+    border: none;
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+  }
+  .menu .navbar button img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+  .menu ul {
+    width: 100%;
+    height: 80%;
+    background-color: #000;
+    color: #ebfe96;
+    border-radius: 8px;
+    list-style: none;
+    position: relative;
+    text-align: center;
+  }
+  .menu ul li:nth-child(1) {
+    position: absolute;
+    top: 20%;
+    left: 48%;
+  }
+  .menu ul li:nth-child(2) {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+  }
+  .menu ul li:nth-child(3) {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+  }
+  .menu ul li:nth-child(4) {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+  }
+}
