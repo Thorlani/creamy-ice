@@ -441,7 +441,6 @@
 
 @media (max-width: 425px) {
   main {
-    height: 100dvh;
     scroll-behavior: smooth;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
@@ -485,10 +484,10 @@
 
   @keyframes iceCream {
     from {
-      top: 260px;
+      top: 220px;
     }
     to {
-      top: 280px;
+      top: 250px;
     }
   }
   .bottom_1 button {
