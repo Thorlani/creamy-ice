@@ -23,15 +23,12 @@
     width: 50%;
   }
 
-  h1::selection {
-    background-color: #000;
-    color: #ebfe96;
+  nav .logo h1 {
+    font-family: "Telma";
   }
 
-  span {
-    padding: 10px 20px;
+  h1::selection {
     background-color: #000;
-    border-radius: 8px;
     color: #ebfe96;
   }
 
@@ -89,10 +86,23 @@
     display: none;
   }
 
+  .muteBtn {
+    position: fixed;
+    z-index: 99;
+    top: 300px;
+    right: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
   .container {
     width: 100%;
-    height: 90%;
+    height: 100vh;
     position: relative;
+    z-index: 40;
   }
 
   .iceCream {
@@ -107,10 +117,10 @@
 
   @keyframes iceCream {
     from {
-      top: 0px;
+      top: 110px;
     }
     to {
-      top: 30px;
+      top: 140px;
     }
   }
 
@@ -121,8 +131,15 @@
   }
   .top_1 h1 {
     max-width: 450px;
-    font-size: 64px;
+    font-size: 74px;
     font-weight: bold;
+    font-family: "Pramukh-Bold";
+  }
+  span {
+    padding: 5px 20px;
+    background-color: #000;
+    border-radius: 8px;
+    color: #ebfe96;
   }
   .bottom_1 {
     width: 100%;
@@ -226,15 +243,12 @@
     width: 50%;
   }
 
-  h1::selection {
-    background-color: #000;
-    color: #ebfe96;
+  nav .logo h1 {
+    font-family: "Telma";
   }
 
-  span {
-    padding: 5px 10px;
+  h1::selection {
     background-color: #000;
-    border-radius: 8px;
     color: #ebfe96;
   }
 
@@ -324,9 +338,16 @@
     padding: 8%;
   }
   .top_1 h1 {
-    max-width: 450px;
-    font-size: 40px;
+    max-width: 400px;
+    font-size: 60px;
     font-weight: bold;
+    font-family: "Pramukh-Bold";
+  }
+  span {
+    padding: 5px 20px;
+    background-color: #000;
+    border-radius: 8px;
+    color: #ebfe96;
   }
   .bottom_1 {
     width: 100%;
@@ -418,8 +439,9 @@
   }
 }
 
-@media (max-width: 451px) {
+@media (max-width: 425px) {
   main {
+    height: 100dvh;
     scroll-behavior: smooth;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
@@ -450,10 +472,10 @@
   }
 
   .top_1 h1 {
-    font-size: 36px;
+    font-size: 32px;
     text-align: center;
     position: relative;
-    top: 120px;
+    top: 110px;
   }
   .iceCream {
     height: 400px;
@@ -501,6 +523,10 @@
     justify-content: space-between;
     align-items: center;
   }
+  .menu .navbar h1 {
+    font-family: "Telma";
+    font-size: 1.5rem;
+  }
   .menu .navbar button {
     border: none;
     background-color: transparent;
@@ -525,21 +551,30 @@
   .menu ul li:nth-child(1) {
     position: absolute;
     top: 20%;
-    left: 48%;
+    left: 45%;
   }
   .menu ul li:nth-child(2) {
     position: absolute;
     top: 40%;
-    left: 50%;
+    left: 46%;
   }
   .menu ul li:nth-child(3) {
     position: absolute;
     top: 60%;
-    left: 45%;
+    left: 40%;
   }
   .menu ul li:nth-child(4) {
     position: absolute;
     top: 80%;
-    left: 50%;
+    left: 45%;
+  }
+}
+
+@media (max-width: 320px) {
+  .iceCream {
+    right: -45px;
+  }
+  .muteBtn {
+    top: 248px;
   }
 }

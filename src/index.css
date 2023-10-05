@@ -4,3 +4,24 @@
   box-sizing: border-box;
 }
 
+p {
+  font-family: "Renade";
+}
+
+@font-face {
+  font-family: "Telma";
+  font-weight: 700;
+  src: url("/public/fonts/telma/OTF/Telma-Bold.otf");
+}
+
+@font-face {
+  font-family: "Pramukh-Bold";
+  font-weight: 700;
+  src: url("/public/fonts/pramukh/OTF/PramukhRounded-Bold.otf");
+}
+
+@font-face {
+  font-family: "Renade";
+  font-weight: 400;
+  src: url("/public/fonts/renade/OTF/Ranade-Regular.otf");
+}

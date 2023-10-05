@@ -8,7 +8,7 @@ import Mute from "./assets/icon/mute.png";
 import OpenedMenu from "./assets/icon/openedMenu.png";
 import ClosedMenu from "./assets/icon/closedMenu.png";
 import Song from "./assets/song.mp3";
-import "./App.css";
+import "./Home.css";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const Home = () => {
@@ -147,9 +147,9 @@ const Home = () => {
         className="container"
       >
         <div className="top_1">
-          <motion.h1 style={{ y }}>
+          <h1>
             <span>I{"’"}ll stop</span> the world and melt with you.
-          </motion.h1>
+          </h1>
         </div>
         <div className="bottom_1 three">
           <button>
@@ -168,32 +168,37 @@ const Home = () => {
           )}
         </button>
       </div>
-      {menuDisplayed && (
-        <div className="menu">
-          <div className="navbar">
-            <div className="logo">
-              <h1>CreamyIce</h1>
-            </div>
-            <button onClick={menuToggle}>
-              <img src={ClosedMenu} alt="hamburger menu" />
-            </button>
+      <motion.div
+        animate={{ y: menuDisplayed ? 0 : -1000 }}
+        transition={{
+          duration: 0.6,
+          ease: "linear",
+        }}
+        className="menu"
+      >
+        <div className="navbar">
+          <div className="logo">
+            <h1>CreamyIce</h1>
           </div>
-          <ul>
-            <li>
-              <p>Home</p>
-            </li>
-            <li>
-              <p>Shop</p>
-            </li>
-            <li>
-              <p>Collection</p>
-            </li>
-            <li>
-              <p>About</p>
-            </li>
-          </ul>
+          <button onClick={menuToggle}>
+            <img src={ClosedMenu} alt="hamburger menu" />
+          </button>
         </div>
-      )}
+        <ul>
+          <li>
+            <p>Home</p>
+          </li>
+          <li>
+            <p>Shop</p>
+          </li>
+          <li>
+            <p>Collection</p>
+          </li>
+          <li>
+            <p>About</p>
+          </li>
+        </ul>
+      </motion.div>
     </main>
   );
 };
