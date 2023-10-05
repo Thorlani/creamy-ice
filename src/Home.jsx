@@ -50,6 +50,7 @@ const Home = () => {
       <nav>
         <div className="logo">
           <h1>CreamyIce</h1>
+          <img src="" alt="" />
         </div>
         <ul>
           <li>
